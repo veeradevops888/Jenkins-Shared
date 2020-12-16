@@ -1,5 +1,5 @@
-def call(String mavenVersion) {
-  withMaven(maven: "${mavenVersion}") {
+def call() {
+  withMaven(maven: "MVN_360") {
         sh "mvn --version"
         //echo ${key}    
   }
